@@ -5,12 +5,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 // images import
-import Logo from '../../assets/img/logo.png';
+import Logo from '../../public/img/logo.png';
 
 // icon
 import { BiMenuAltRight } from 'react-icons/bi';
 
-export const Header = () => {
+const Header = () => {
   return (
     <header className='bg-white shadow-sm fixed top-0 left-0 right-0 z-[1000]'>
       <div className="flex justify-between items-center">
@@ -28,3 +28,5 @@ export const Header = () => {
     </header>
   )
 }
+
+export default Header;
