@@ -2,26 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* custom styles */
+* {
+  transition: 1.2s cubic-bezier(.17,.85,.438,.99);
+}
+img {
+  height: auto;
+  max-width: 100%;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
-@media (prefers-color-scheme: dark) {
+/* custom base */
+@layer base {
+
+}
+
+/* custom components */
+@layer components {
+
+}
+
+
+/* custom utilities */
+@layer utilities {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --navy-dark: #161925;
+    --navy-light: #1E2131;
+    --yellow: #FFA552;
+  }
+  .text-navy-dark {
+    color: var(--navy-dark);
+  }
+  .text-navy-light {
+    color: var(--navy-light);
+  }
+  .text-yellow {
+    color: var(--yellow);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
