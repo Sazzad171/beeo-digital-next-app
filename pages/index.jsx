@@ -14,6 +14,9 @@ import 'swiper/css';
 // counterup
 import CountUp from 'react-countup';
 
+// icons
+import { CgArrowLongRight } from 'react-icons/cg';
+
 // import images
 import TextBottomImg from '../public/img/banner-text-line.png';
 import RPImg1 from '../public/img/rp-1.jpg';
@@ -36,9 +39,9 @@ export default function Home() {
       <Meta />
 
       {/* banner start */}
-      <section className='bg-[#F3F7F5] pt-[160px]'>
+      <section className='home-banner bg-[#F3F7F5] pt-[160px] relative'>
         <div className='max-w-4xl mx-auto mb-20'>
-          <h1 className='text-7xl font-volkhov text-center text-navy-dark mb-4'>
+          <h1 className='text-7xl font-volkhov font-bold text-center text-navy-dark mb-4'>
             Where <br /> your {' '}
             <span className="relative z-10">
               imaginations
@@ -52,11 +55,15 @@ export default function Home() {
               hover:bg-slate-900'>Get Started</Link>
           </p>
         </div>
+        
+        {/* circle text */}
+        
 
-        <div className="max-w-6xl 2xl:max-w-[86rem] ms-auto px-2 md:px-0">
+        <div className="max-w-6xl 2xl:max-w-[86rem] ms-auto px-2 md:px-0 relative">
+
           <div className="flex flex-wrap items-center">
             <div className="w-full md:w-1/4 px-2 mb-4 md:mb-0">
-              <h4 className='text-yellow font-volkhov text-4xl'>Recent Projects</h4>
+              <h4 className='text-yellow font-volkhov font-bold text-4xl'>Recent Projects</h4>
             </div>
             <div className="w-full md:w-3/4 px-2 mb-4 md:mb-0">
               
@@ -103,6 +110,15 @@ export default function Home() {
 
             </div>
           </div>
+          {/* view more */}
+          <div className="absolute right-20 top-[-140px]">
+            <a href="#">
+              <div className="relative view-arrow z-10 mb-4">
+                <CgArrowLongRight size={40} />
+              </div>
+              <h6 className='ps-4 font-semibold text-lg text-navy-dark leading-6'>View More <br /> on Dribbble</h6>
+            </a>
+          </div>
         </div>
       </section>
       {/* banner end */}
@@ -111,7 +127,7 @@ export default function Home() {
       <section className='pt-40 pb-36 px-2'>
         <div className="max-w-6xl mx-auto">
           <h5 className="text-center text-[#DF6951] uppercase text-lg font-semibold mb-2">What sets us apart</h5>
-          <h2 className="text-center font-volkhov text-4xl text-navy-light leading-[50px]">
+          <h2 className="text-center font-volkhov font-bold text-4xl text-navy-light leading-[50px]">
             We bring a unique international perspective to <br />
             <span className='text-blue'>branding</span>, {' '}
             <span className='text-blue'>graphic</span> design, {' '}
@@ -122,19 +138,19 @@ export default function Home() {
 
           <div className="flex flex-wrap justify-center -mx-2 mt-20">
             <div className="w-full md:w-1/6 px-2">
-              <h2 className='counter-number before:bg-[#B3A4FF] text-navy-dark font-volkhov text-5xl relative mb-2'>
+              <h2 className='counter-number before:bg-[#B3A4FF] text-navy-dark font-volkhov font-bold text-5xl relative mb-2'>
                 0<CountUp enableScrollSpy={true} end={3} />+
               </h2>
               <p className='text-navy-light font-medium'>years</p>
             </div>
             <div className="w-full md:w-1/6 px-2">
-              <h2 className='counter-number before:bg-[#FFBE16] text-navy-dark font-volkhov text-5xl relative mb-2'>
+              <h2 className='counter-number before:bg-[#FFBE16] text-navy-dark font-volkhov font-bold text-5xl relative mb-2'>
               <CountUp enableScrollSpy={true} end={60} />+
               </h2>
               <p className='text-navy-light font-medium'>Projects</p>
             </div>
             <div className="w-full md:w-1/6 px-2">
-              <h2 className='counter-number before:bg-[#9CD161] text-navy-dark font-volkhov text-5xl relative mb-2'>
+              <h2 className='counter-number before:bg-[#9CD161] text-navy-dark font-volkhov font-bold text-5xl relative mb-2'>
                 <CountUp enableScrollSpy={true} end={30} />+
               </h2>
               <p className='text-navy-light font-medium'>Clients</p>
@@ -284,32 +300,204 @@ export default function Home() {
       {/* testimonial start */}
       <section className='pb-24'>
         <div className="max-w-6xl mx-auto px-2">
-          <div className='mb-4 lg:mb-14'>
+          <div className='mb-4 lg:mb-20'>
             <h6 className="text-center text-blue font-medium text-lg mb-3">Testimonials</h6>
             <h3 className="text-center font-volkhov font-bold text-[#0F172A] text-4xl">Our happy clients say about us</h3>
           </div>
         </div>
 
-        <div>
-
+        {/* first scroller */}
+        <div className='px-2'>
+          <Swiper
+            spaceBetween={20}
+            speed={4000}
+            autoplay={{
+              delay: 1
+            }}
+            modules={[Autoplay]}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              400:{
+                slidesPerView:1.5,
+              },
+              865:{
+                slidesPerView:2.5
+              },
+              1200:{
+                slidesPerView:3
+              },
+              1500:{
+                slidesPerView:4.5
+              }
+            }}
+          >
+            <SwiperSlide>
+              <div className='flex items-center gap-4 p-4 rounded-full shadow-lg my-4'>
+                <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
+                <div>
+                  <p className='text-sm text-[#657790] mb-3'>Best design agency we've ever worked with.</p>
+                  <p className='text-sm text-[#657790]'>- @jamescron</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='flex items-center gap-4 p-4 rounded-full shadow-lg my-4'>
+                <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
+                <div>
+                  <p className='text-sm text-[#657790] mb-3'>Best design agency we've ever worked with.</p>
+                  <p className='text-sm text-[#657790]'>- @jamescron</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='flex items-center gap-4 p-4 rounded-full shadow-lg my-4'>
+                <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
+                <div>
+                  <p className='text-sm text-[#657790] mb-3'>Best design agency we've ever worked with.</p>
+                  <p className='text-sm text-[#657790]'>- @jamescron</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='flex items-center gap-4 p-4 rounded-full shadow-lg my-4'>
+                <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
+                <div>
+                  <p className='text-sm text-[#657790] mb-3'>Best design agency we've ever worked with.</p>
+                  <p className='text-sm text-[#657790]'>- @jamescron</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='flex items-center gap-4 p-4 rounded-full shadow-lg my-4'>
+                <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
+                <div>
+                  <p className='text-sm text-[#657790] mb-3'>Best design agency we've ever worked with.</p>
+                  <p className='text-sm text-[#657790]'>- @jamescron</p>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
-        <div>
-
+        {/* second scroller */}
+        <div className='px-2'>
+          <Swiper
+            spaceBetween={20}
+            speed={5000}
+            autoplay={{
+              delay: 1
+            }}
+            modules={[Autoplay]}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              400:{
+                slidesPerView:1.5,
+              },
+              865:{
+                slidesPerView:2.5
+              },
+              1200:{
+                slidesPerView:2.8
+              },
+              1500:{
+                slidesPerView:4
+              }
+            }}
+          >
+            <SwiperSlide>
+              <div className='flex items-center gap-4 p-4 rounded-full shadow-lg my-4'>
+                <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
+                <div>
+                  <p className='text-sm text-[#657790] mb-3'>Best design agency we've ever worked with.</p>
+                  <p className='text-sm text-[#657790]'>- @jamescron</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='flex items-center gap-4 p-4 rounded-full shadow-lg my-4'>
+                <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
+                <div>
+                  <p className='text-sm text-[#657790] mb-3'>Best design agency we've ever worked with.</p>
+                  <p className='text-sm text-[#657790]'>- @jamescron</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='flex items-center gap-4 p-4 rounded-full shadow-lg my-4'>
+                <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
+                <div>
+                  <p className='text-sm text-[#657790] mb-3'>Best design agency we've ever worked with.</p>
+                  <p className='text-sm text-[#657790]'>- @jamescron</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='flex items-center gap-4 p-4 rounded-full shadow-lg my-4'>
+                <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
+                <div>
+                  <p className='text-sm text-[#657790] mb-3'>Best design agency we've ever worked with.</p>
+                  <p className='text-sm text-[#657790]'>- @jamescron</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='flex items-center gap-4 p-4 rounded-full shadow-lg my-4'>
+                <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
+                <div>
+                  <p className='text-sm text-[#657790] mb-3'>Best design agency we've ever worked with.</p>
+                  <p className='text-sm text-[#657790]'>- @jamescron</p>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
 
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-2 mt-4 lg:mt-20">
           <div className="flex flex-wrap -mx-2">
             <div className="w-full md:w-2/5 px-2">
               <p className='text-[#091B22] font-medium'>Feedback from our clients</p>
             </div>
             <div className="w-full md:w-3/5 px-2">
-              <p className='text-[#091B22] text-2xl mb-5'>
-                I had the pleasure of working with Beeo Digital on a web application project, and I can confidently say that their team exceeded my expectations. They were professional, attentive to detail, and delivered a design that perfectly captured the essence of my brand. The team's creativity and expertise shone through in every aspect of the project, from the initial concept to the final product. I'm thrilled with the end result, and I wouldn't hesitate to recommend Beeo Digital to anyone in need of exceptional UI design services.
-              </p>
-              <div className="flex items-center gap-4">
-                <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
-                <p className='text-[#091B22]'>Jenny Wilson, Founder - Muzica</p>
-              </div>
+              <Swiper
+                spaceBetween={20}
+                speed={2000}
+                slidesPerView={1}
+                autoplay={{
+                  delay: 2500
+                }}
+                modules={[Autoplay]}
+              >
+                <SwiperSlide>
+                  <p className='text-[#091B22] text-2xl leading-[36px] mb-5'>
+                    I had the pleasure of working with Beeo Digital on a web application project, and I can confidently say that their team exceeded my expectations. They were professional, attentive to detail, and delivered a design that perfectly captured the essence of my brand. The team's creativity and expertise shone through in every aspect of the project, from the initial concept to the final product. I'm thrilled with the end result, and I wouldn't hesitate to recommend Beeo Digital to anyone in need of exceptional UI design services.
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
+                    <p className='text-[#091B22]'>Jenny Wilson, Founder - Muzica</p>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <p className='text-[#091B22] text-2xl leading-[36px] mb-5'>
+                    I had the pleasure of working with Beeo Digital on a web application project, and I can confidently say that their team exceeded my expectations. They were professional, attentive to detail, and delivered a design that perfectly captured the essence of my brand. The team's creativity and expertise shone through in every aspect of the project, from the initial concept to the final product. I'm thrilled with the end result, and I wouldn't hesitate to recommend Beeo Digital to anyone in need of exceptional UI design services.
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
+                    <p className='text-[#091B22]'>Jenny Wilson, Founder - Muzica</p>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <p className='text-[#091B22] text-2xl leading-[36px] mb-5'>
+                    I had the pleasure of working with Beeo Digital on a web application project, and I can confidently say that their team exceeded my expectations. They were professional, attentive to detail, and delivered a design that perfectly captured the essence of my brand. The team's creativity and expertise shone through in every aspect of the project, from the initial concept to the final product. I'm thrilled with the end result, and I wouldn't hesitate to recommend Beeo Digital to anyone in need of exceptional UI design services.
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
+                    <p className='text-[#091B22]'>Jenny Wilson, Founder - Muzica</p>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
         </div>
