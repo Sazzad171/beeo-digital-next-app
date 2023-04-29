@@ -26,13 +26,13 @@ img {
 
 }
 
-
 /* custom utilities */
 @layer utilities {
   :root {
     --navy-dark: #161925;
     --navy-light: #1E2131;
     --yellow: #FFA552;
+    --blue: #5C83FB;
   }
   .text-navy-dark {
     color: var(--navy-dark);
@@ -43,5 +43,38 @@ img {
   .text-yellow {
     color: var(--yellow);
   }
+  .text-blue {
+    color: var(--blue);
+  }
 }
 
+.counter-number::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: -12px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  z-index: -1;
+}
+.services-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 22px;
+  height: 2px;
+  background-color: var(--yellow);
+}
+.service-img::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: -10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: var(--yellow);
+  z-index: -1;
+}

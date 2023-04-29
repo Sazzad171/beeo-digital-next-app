@@ -9,7 +9,7 @@ import { Volkhov, Poppins } from 'next/font/google';
 
 // volkhov font
 const volkhov = Volkhov({
-  weight: ['700'],
+  weight: ['700', '400'],
   subsets: ['latin'],
   variable: '--font-volkhov'
 });
