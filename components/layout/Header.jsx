@@ -19,6 +19,12 @@ const Header = () => {
   // local state
   const [showNavbar, setShowNavbar] = useState(false);
 
+  // hide navbar when page change
+  const handlePageChange = () => {
+    setShowNavbar(false);
+    scrollTo(0, 0);
+  }
+
   return (
     <>
       <header className='bg-white shadow-sm fixed top-0 left-0 right-0 z-[1000]'>
@@ -82,22 +88,22 @@ const Header = () => {
                   <div className="w-3/4 lg:w-2/5 px-2">
                     <ul className='mt-4 lg:mt-14'>
                       <li className='mb-4 md:mb-8'>
-                        <a href="#" className='text-white text-2xl md:text-4xl font-bold uppercase hover:text-[#FBBC05]'>home</a>
+                        <Link href="/" className='text-white text-2xl md:text-4xl font-bold uppercase hover:text-[#FBBC05]' onClick={handlePageChange}>home</Link>
                       </li>
                       <li className='mb-4 md:mb-8'>
-                        <a href="#" className='text-white text-2xl md:text-4xl font-bold uppercase hover:text-[#FBBC05]'>about</a>
+                        <Link href="/about" className='text-white text-2xl md:text-4xl font-bold uppercase hover:text-[#FBBC05]' onClick={handlePageChange}>about</Link>
                       </li>
                       <li className='mb-4 md:mb-8'>
-                        <a href="#" className='text-white text-2xl md:text-4xl font-bold uppercase hover:text-[#FBBC05]'>work</a>
+                        <Link href="/work" className='text-white text-2xl md:text-4xl font-bold uppercase hover:text-[#FBBC05]' onClick={handlePageChange}>work</Link>
                       </li>
                       <li className='mb-4 md:mb-8'>
-                        <a href="#" className='text-white text-2xl md:text-4xl font-bold uppercase hover:text-[#FBBC05]'>case study</a>
+                        <Link href="/case-study" className='text-white text-2xl md:text-4xl font-bold uppercase hover:text-[#FBBC05]' onClick={handlePageChange}>case study</Link>
                       </li>
                       <li className='mb-4 md:mb-8'>
-                        <a href="#" className='text-white text-2xl md:text-4xl font-bold uppercase hover:text-[#FBBC05]'>blog</a>
+                        <Link href="/blog" className='text-white text-2xl md:text-4xl font-bold uppercase hover:text-[#FBBC05]' onClick={handlePageChange}>blog</Link>
                       </li>
                       <li className='mb-4 md:mb-8'>
-                        <a href="#" className='text-white text-2xl md:text-4xl font-bold uppercase hover:text-[#FBBC05]'>team</a>
+                        <Link href="/team" className='text-white text-2xl md:text-4xl font-bold uppercase hover:text-[#FBBC05]' onClick={handlePageChange}>team</Link>
                       </li>
                     </ul>
                   </div>
