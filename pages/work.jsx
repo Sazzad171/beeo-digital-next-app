@@ -14,11 +14,16 @@ export default function Home() {
   // local state
   const [projects, setProjects] = useState(Projects);
 
+  // filter projects
   const filterProject = (projCat) => {
-    const updateItems = Projects.filter((item) => {
-      return item.category === projCat
-    });
-    setProjects(updateItems);
+    if ( projCat === "" ) {
+      setProjects(Projects);
+    } else {
+      const updateItems = Projects.filter((item) => {
+        return item.category === projCat
+      });
+      setProjects(updateItems);
+    }
   }
 
   return (
@@ -38,43 +43,43 @@ export default function Home() {
       <section className=''>
         <div className="max-w-6xl mx-auto px-2">
           {/* filter links */}
-          <ul className='flex gap-4 mb-4'>
+          <ul className='filter-projects flex gap-4 mb-4 md:mb-7'>
             <li>
-              <button onClick={() => filterProject("")}>All Projects</button>
+              <button onClick={() => filterProject("")} className='font-medium text-lg text-[#6F7177] pb-1'>All Projects</button>
             </li>
             <li>
-              <button onClick={() => filterProject("Website")}>Websites</button>
+              <button onClick={() => filterProject("Website")} className='font-medium text-lg text-[#6F7177] pb-1'>Websites</button>
             </li>
             <li>
-              <button onClick={() => filterProject("Application")}>Applications</button>
+              <button onClick={() => filterProject("Application")} className='font-medium text-lg text-[#6F7177]'>Applications</button>
             </li>
             <li>
-              <button onClick={() => filterProject("Branding")}>Branding</button>
+              <button onClick={() => filterProject("Branding")} className='font-medium text-lg text-[#6F7177] pb-1'>Branding</button>
             </li>
             <li>
-              <button onClick={() => filterProject("UI/UX")}>UI/UX</button>
+              <button onClick={() => filterProject("UI/UX")} className='font-medium text-lg text-[#6F7177] pb-1'>UI/UX</button>
             </li>
           </ul>
 
           <div className="flex flex-wrap -mx-2">
 
             {
-              projects.map((item) => {
-                return item.id % 2 == 0 ? (
-                  <div className="w-full md:w-1/3 px-2 mb-4 lg:mb-10" key={item.id}>
-                    <Link href="#">
-                      <Image src={item.image} alt='projects' className='mb-5 hover:shadow-lg hover:shadow-gray-500' />
-                      <p className='text-lg'>
-                        <b>Radiona</b> - Etiam pulvinar tortor id blandit for the space
-                      </p>
-                    </Link>
-                  </div>
-                ) : (
+              projects.map((item, i) => {
+                return i % 2 === 0 ? (
                   <div className="w-full md:w-2/3 ps-2 pe-2 lg:pe-7 mb-4 lg:mb-10" key={item.id}>
                     <Link href="#">
                       <Image src={item.image} alt='projects' className='mb-5 hover:shadow-lg hover:shadow-gray-500' />
                       <p className='text-lg'>
                         <b>Treva</b> - Feel your experience with Treva
+                      </p>
+                    </Link>
+                  </div>
+                ) : (
+                  <div className="w-full md:w-1/3 px-2 mb-4 lg:mb-10" key={item.id}>
+                    <Link href="#">
+                      <Image src={item.image} alt='projects' className='mb-5 hover:shadow-lg hover:shadow-gray-500' />
+                      <p className='text-lg'>
+                        <b>Radiona</b> - Etiam pulvinar tortor id blandit for the space
                       </p>
                     </Link>
                   </div>

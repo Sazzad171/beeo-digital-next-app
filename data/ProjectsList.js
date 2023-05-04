@@ -28,42 +28,42 @@ const Projects = [
     },
     {
         id: 5,
-        image: FP1,
+        image: FP4,
         category: "Website"
     },
     {
         id: 6,
-        image: FP2,
+        image: FP3,
         category: "Application"
     },
     {
         id: 7,
-        image: FP3,
+        image: FP2,
         category: "Branding"
     },
     {
         id: 8,
-        image: FP4,
+        image: FP1,
         category: "UI/UX"
     },
     {
         id: 9,
-        image: FP1,
+        image: FP3,
         category: "Website"
     },
     {
         id: 10,
-        image: FP2,
+        image: FP4,
         category: "Application"
     },
     {
         id: 11,
-        image: FP3,
+        image: FP1,
         category: "Branding"
     },
     {
         id: 12,
-        image: FP4,
+        image: FP2,
         category: "UI/UX"
     },
 ]
