@@ -18,7 +18,7 @@ export default function Home() {
       {/* page heading area start */}
       <section className='pt-20 md:pt-[140px] pb-10 md:pb-32'>
         <div className="max-w-6xl mx-auto px-2">
-          <p className='text-xl text-[#091B22] mb-2 md:mb-4'>Contact</p>
+          <p className='text-xl text-[#091B22] mb-3 md:mb-4'>Contact</p>
           <h1 className='font-volkhov text-5xl lg:text-7xl lg:leading-[90px] text-[#091B22]'>
             <Image src={Person} alt='person img' className='inline w-14 h-14 rounded-full -mt-[14px] me-8' />
             I can't wait to <br /> hear your ideas

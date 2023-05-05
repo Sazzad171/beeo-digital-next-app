@@ -9,7 +9,7 @@ import Meta from '@/components/Meta';
 // get static data
 import Projects from '../data/ProjectsList';
 
-export default function Home() {
+export default function Work() {
 
   // local state
   const [projects, setProjects] = useState(Projects);

@@ -9,7 +9,7 @@ import Meta from '@/components/Meta';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-export default function Home() {
+export default function Blog() {
   return (
     <>
       <Meta />

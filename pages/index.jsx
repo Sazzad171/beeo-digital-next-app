@@ -69,45 +69,45 @@ export default function Home() {
             <div className="w-full md:w-3/4 px-2 mb-4 md:mb-0">
               
               <Swiper
-                  spaceBetween={20}
-                  slidesPerView={2.5}
-                  autoplay={{
-                    delay: 2500
-                  }}
-                  modules={[Autoplay]}
-                  breakpoints={{
-                    0: {
-                      slidesPerView: 1,
-                    },
-                    400:{
-                      slidesPerView:1.5,
-                    },
-                    865:{
-                      slidesPerView:2.5
-                    }
-                  }}
-                >
-                  <SwiperSlide>
-                    <a href="#">
-                      <Image src={RPImg1} alt='project img' />
-                    </a>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <a href="#">
-                      <Image src={RPImg2} alt='project img' />
-                    </a>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <a href="#">
-                      <Image src={RPImg1} alt='project img' />
-                    </a>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <a href="#">
-                      <Image src={RPImg2} alt='project img' />
-                    </a>
-                  </SwiperSlide>
-                </Swiper>
+                spaceBetween={20}
+                slidesPerView={2.5}
+                autoplay={{
+                  delay: 2500
+                }}
+                modules={[Autoplay]}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1,
+                  },
+                  400:{
+                    slidesPerView:1.5,
+                  },
+                  865:{
+                    slidesPerView:2.5
+                  }
+                }}
+              >
+                <SwiperSlide>
+                  <a href="#">
+                    <Image src={RPImg1} alt='project img' />
+                  </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <a href="#">
+                    <Image src={RPImg2} alt='project img' />
+                  </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <a href="#">
+                    <Image src={RPImg1} alt='project img' />
+                  </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <a href="#">
+                    <Image src={RPImg2} alt='project img' />
+                  </a>
+                </SwiperSlide>
+              </Swiper>
 
             </div>
           </div>
