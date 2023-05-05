@@ -13,6 +13,7 @@ export default function Home() {
 
   // local state
   const [projects, setProjects] = useState(Projects);
+  const [activeTab, setActiveTab] = useState('');
 
   // filter projects
   const filterProject = (projCat) => {
@@ -24,6 +25,8 @@ export default function Home() {
       });
       setProjects(updateItems);
     }
+
+    setActiveTab(projCat);
   }
 
   return (
@@ -43,21 +46,21 @@ export default function Home() {
       <section className=''>
         <div className="max-w-6xl mx-auto px-2">
           {/* filter links */}
-          <ul className='filter-projects flex gap-4 mb-4 md:mb-7'>
+          <ul className='flex flex-wrap gap-4 mb-4 md:mb-7'>
             <li>
-              <button onClick={() => filterProject("")} className='font-medium text-lg text-[#6F7177] pb-1'>All Projects</button>
+              <button onClick={() => filterProject("")} className={`font-medium text-lg pb-1 ${activeTab === '' ? "text-[#091B22] border-b border-[#6F7177]" : "text-[#6F7177]"}`}>All Projects</button>
             </li>
             <li>
-              <button onClick={() => filterProject("Website")} className='font-medium text-lg text-[#6F7177] pb-1'>Websites</button>
+              <button onClick={() => filterProject("Website")} className={`font-medium text-lg pb-1 ${activeTab === 'Website' ? "text-[#091B22] border-b border-[#6F7177]" : "text-[#6F7177]"}`}>Websites</button>
             </li>
             <li>
-              <button onClick={() => filterProject("Application")} className='font-medium text-lg text-[#6F7177]'>Applications</button>
+              <button onClick={() => filterProject("Application")} className={`font-medium text-lg pb-1 ${activeTab === 'Application' ? "text-[#091B22] border-b border-[#6F7177]" : "text-[#6F7177]"}`}>Applications</button>
             </li>
             <li>
-              <button onClick={() => filterProject("Branding")} className='font-medium text-lg text-[#6F7177] pb-1'>Branding</button>
+              <button onClick={() => filterProject("Branding")} className={`font-medium text-lg pb-1 ${activeTab === 'Branding' ? "text-[#091B22] border-b border-[#6F7177]" : "text-[#6F7177]"}`}>Branding</button>
             </li>
             <li>
-              <button onClick={() => filterProject("UI/UX")} className='font-medium text-lg text-[#6F7177] pb-1'>UI/UX</button>
+              <button onClick={() => filterProject("UI/UX")} className={`font-medium text-lg pb-1 ${activeTab === 'UI/UX' ? "text-[#091B22] border-b border-[#6F7177]" : "text-[#6F7177]"}`}>UI/UX</button>
             </li>
           </ul>
 
