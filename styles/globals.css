@@ -18,6 +18,10 @@ img {
   image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
 }
+input:focus,
+textarea:focus {
+  outline: none;
+}
 
 /* custom base */
 @layer base {
