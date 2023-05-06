@@ -4,7 +4,7 @@
 
 /* custom styles */
 * {
-  transition: 1.2s cubic-bezier(.17,.85,.438,.99);
+  transition: 1s cubic-bezier(.17,.85,.438,.99);
 }
 body {
   position: relative;

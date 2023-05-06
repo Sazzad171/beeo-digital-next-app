@@ -45,7 +45,7 @@ export default function Home() {
       </section>
       {/* page heading area end */}
 
-       {/* history start */}
+      {/* history start */}
       <section className='pb-10 md:pb-24 md:pt-4'>
         <div className="max-w-6xl mx-auto px-2">
           <div className="flex flex-wrap -mx-2">

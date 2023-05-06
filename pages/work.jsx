@@ -70,7 +70,7 @@ export default function Work() {
               projects.map((item, i) => {
                 return i % 2 === 0 ? (
                   <div className="w-full md:w-2/3 ps-2 pe-2 lg:pe-7 mb-4 lg:mb-10" key={item.id}>
-                    <Link href="#">
+                    <Link href="/work/[id]" as={`/work/${item.id}`}>
                       <Image src={item.image} alt='projects' className='mb-5 hover:shadow-lg hover:shadow-gray-500' />
                       <p className='text-lg'>
                         <b>Treva</b> - Feel your experience with Treva
@@ -79,7 +79,7 @@ export default function Work() {
                   </div>
                 ) : (
                   <div className="w-full md:w-1/3 px-2 mb-4 lg:mb-10" key={item.id}>
-                    <Link href="#">
+                    <Link href="/work/[id]" as={`/work/${item.id}`}>
                       <Image src={item.image} alt='projects' className='mb-5 hover:shadow-lg hover:shadow-gray-500' />
                       <p className='text-lg'>
                         <b>Radiona</b> - Etiam pulvinar tortor id blandit for the space

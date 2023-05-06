@@ -7,6 +7,15 @@ import Meta from '@/components/Meta';
 // react icons
 import { FaPlus } from 'react-icons/fa';
 
+// accordion
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from 'react-accessible-accordion';
+
 // image import
 import CoreValues1 from '../public/img/core-values-1.png';
 import CoreValues2 from '../public/img/core-values-2.png';
@@ -18,6 +27,7 @@ import ServiceMobileApp from '../public/img/service-mobile-app.jpg';
 import ServiceHire from '../public/img/services_hire.jpg';
 import ServiceStrategy from '../public/img/service-strategy.jpg';
 import ServiceWebDev from '../public/img/service-web-dev.jpg';
+import FaqImg from '../public/img/hey-google-img.png';
 
 export default function Services() {
 
@@ -101,12 +111,12 @@ export default function Services() {
 
           <div className="flex flex-wrap items-center justify-between -mx-2">
             <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0">
-              <Image src={ServiceWebsite} alt='service img' className='w-full' />
+              <Image src={ServiceWebsite} alt='service img' className='w-full hover:shadow-xl hover:-translate-y-2' />
             </div>
             <div className="w-full md:w-1/2 px-2">
               <div className="lg:ps-24">
                 <p className='text-[#6F7177] text-lg mb-2 md:mb-5'>Websites and platforms</p>
-                <p className='text-xl text-[#091B22] mb-4 md:mb-8'>
+                <p className='text-xl text-[#091B22] mb-4 md:mb-10'>
                   Our team of experts has extensive experience in designing and developing web applications for a range of industries and use cases. We take a user-centered approach to design, ensuring that every aspect of the application is tailored to the needs of the target audience.
                 </p>
                 <ul>
@@ -123,7 +133,8 @@ export default function Services() {
                     <p className='text-lg text-[#091B22]'>Wordpress Website</p>
                   </li>
                 </ul>
-                <p className='mt-4 md:mt-8'><a href="#" className='border border-[#E6E8E9] rounded-3xl font-medium text-xl text-[#091B22] px-8 py-3'>Read more</a></p>
+                <p className='mt-4 md:mt-10'><a href="#" className='border border-[#E6E8E9] rounded-3xl font-medium text-xl text-[#091B22]
+                   px-8 py-3 hover:bg-[#091B22] hover:text-white'>Read more</a></p>
               </div>
             </div>
           </div>
@@ -131,6 +142,268 @@ export default function Services() {
       </section>
       {/* service website end */}
 
+      {/* service mobile app start */}
+      <section className="pb-10 md:pb-24">
+        <div className="max-w-6xl mx-auto px-2">
+          <h1 className='font-volkhov text-5xl lg:text-7xl lg:leading-[90px] text-[#091B22] text-center mb-6 lg:mb-16'>Mobile
+            <br /> application</h1>
+
+          <div className="flex flex-wrap items-center justify-between -mx-2">
+            <div className="w-full md:w-1/2 px-2 order-2 md:order-1">
+              <div className="lg:pe-24">
+                <p className='text-[#6F7177] text-lg mb-2 md:mb-5'>Mobile application</p>
+                <p className='text-xl text-[#091B22] mb-4 md:mb-10'>
+                  Our team of expert designers takes a user-centered approach to mobile app design, ensuring that every aspect of the design is tailored to the needs of the target audience. We focus on creating a seamless user experience that engages and delights users.
+                </p>
+                <ul>
+                  <li className='flex items-center gap-4 mb-2 md:mb-3'>
+                    <FaPlus />
+                    <p className='text-lg text-[#091B22]'>Mobile Application UI Design</p>
+                  </li>
+                  <li className='flex items-center gap-4 mb-2 md:mb-3'>
+                    <FaPlus />
+                    <p className='text-lg text-[#091B22]'>Mobile Application Prototype</p>
+                  </li>
+                </ul>
+                <p className='mt-4 md:mt-10'><a href="#" className='border border-[#E6E8E9] rounded-3xl font-medium text-xl text-[#091B22]
+                   px-8 py-3 hover:bg-[#091B22] hover:text-white'>Read more</a></p>
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0 order-1 md:order-2">
+              <Image src={ServiceMobileApp} alt='service img' className='w-full hover:shadow-xl hover:-translate-y-2' />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* service mobile app end */}
+
+      {/* service strategy start */}
+      <section className="pb-10 md:pb-24">
+        <div className="max-w-6xl mx-auto px-2">
+          <h1 className='font-volkhov text-5xl lg:text-7xl lg:leading-[90px] text-[#091B22] text-center mb-6 lg:mb-16'>Strategy
+            <br /> and branding</h1>
+
+          <div className="flex flex-wrap items-center justify-between -mx-2">
+            <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+              <Image src={ServiceStrategy} alt='service img' className='w-full hover:shadow-xl hover:-translate-y-2' />
+            </div>
+            <div className="w-full md:w-1/2 px-2">
+              <div className="lg:ps-24">
+                <p className='text-[#6F7177] text-lg mb-2 md:mb-5'>Strategy and branding</p>
+                <p className='text-xl text-[#091B22] mb-4 md:mb-10'>
+                  We conduct extensive research and analysis to develop a clear understanding of the competitive landscape and identify opportunities for differentiation. From there, we develop a brand strategy that includes brand messaging, visual identity, and brand guidelines. With Beeo Digital, you can be confident that your brand will stand out from the competition and help you achieve your business goals.
+                </p>
+                <ul>
+                  <li className='flex items-center gap-4 mb-2 md:mb-3'>
+                    <FaPlus />
+                    <p className='text-lg text-[#091B22]'>Brand Design</p>
+                  </li>
+                  <li className='flex items-center gap-4 mb-2 md:mb-3'>
+                    <FaPlus />
+                    <p className='text-lg text-[#091B22]'>Logo Design</p>
+                  </li>
+                  <li className='flex items-center gap-4 mb-2 md:mb-3'>
+                    <FaPlus />
+                    <p className='text-lg text-[#091B22]'>Marketing Design</p>
+                  </li>
+                </ul>
+                <p className='mt-4 md:mt-10'><a href="#" className='border border-[#E6E8E9] rounded-3xl font-medium text-xl text-[#091B22]
+                   px-8 py-3 hover:bg-[#091B22] hover:text-white'>Read more</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* service strategy end */}
+
+      {/* service design start */}
+      <section className="pb-10 md:pb-24">
+        <div className="max-w-6xl mx-auto px-2">
+          <h1 className='font-volkhov text-5xl lg:text-7xl lg:leading-[90px] text-[#091B22] text-center mb-6 lg:mb-16'>Design
+            <br /> concept</h1>
+
+          <div className="flex flex-wrap items-center justify-between -mx-2">
+            <div className="w-full md:w-1/2 px-2 order-2 md:order-1">
+              <div className="lg:pe-24">
+                <p className='text-[#6F7177] text-lg mb-2 md:mb-5'>Design concept</p>
+                <p className='text-xl text-[#091B22] mb-4 md:mb-10'>
+                  Beeo Digital offers a variety of design concept services to help clients realize their vision. Our team of experienced designers and creatives work closely with clients to develop unique and innovative design concepts. From initial ideation to final execution, we ensure that every design concept we create is tailored to the client's needs and goals.
+                </p>
+                <ul>
+                  <li className='flex items-center gap-4 mb-2 md:mb-3'>
+                    <FaPlus />
+                    <p className='text-lg text-[#091B22]'>UI/UX Design</p>
+                  </li>
+                  <li className='flex items-center gap-4 mb-2 md:mb-3'>
+                    <FaPlus />
+                    <p className='text-lg text-[#091B22]'>Brand Design</p>
+                  </li>
+                  <li className='flex items-center gap-4 mb-2 md:mb-3'>
+                    <FaPlus />
+                    <p className='text-lg text-[#091B22]'>Marketing Design</p>
+                  </li>
+                </ul>
+                <p className='mt-4 md:mt-10'><a href="#" className='border border-[#E6E8E9] rounded-3xl font-medium text-xl text-[#091B22]
+                   px-8 py-3 hover:bg-[#091B22] hover:text-white'>Read more</a></p>
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0 order-1 md:order-2">
+              <Image src={ServiceDesign} alt='service img' className='w-full hover:shadow-xl hover:-translate-y-2' />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* service design end */}
+
+      {/* service web dev start */}
+      <section className="pb-10 md:pb-24">
+        <div className="max-w-6xl mx-auto px-2">
+          <h1 className='font-volkhov text-5xl lg:text-7xl lg:leading-[90px] text-[#091B22] text-center mb-6 lg:mb-16'>Website <br /> Development</h1>
+
+          <div className="flex flex-wrap items-center justify-between -mx-2">
+            <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+              <Image src={ServiceWebDev} alt='service img' className='w-full hover:shadow-xl hover:-translate-y-2' />
+            </div>
+            <div className="w-full md:w-1/2 px-2">
+              <div className="lg:ps-24">
+                <p className='text-[#6F7177] text-lg mb-2 md:mb-5'>Front-end development</p>
+                <p className='text-xl text-[#091B22] mb-4 md:mb-10'>
+                  We specialize in front-end development to create engaging, responsive, and user-friendly web applications. Our team of front-end developers has extensive experience using the latest technologies, frameworks, and best practices to ensure that every application we develop meets the highest standards of quality and performance. Whether you need a custom website or a complex web application, our front-end development team has the expertise to deliver a solution that exceeds your expectations.
+                </p>
+                <ul>
+                  <li className='flex items-center gap-4 mb-2 md:mb-3'>
+                    <FaPlus />
+                    <p className='text-lg text-[#091B22]'>Website Design</p>
+                  </li>
+                  <li className='flex items-center gap-4 mb-2 md:mb-3'>
+                    <FaPlus />
+                    <p className='text-lg text-[#091B22]'>Web Application Development</p>
+                  </li>
+                  <li className='flex items-center gap-4 mb-2 md:mb-3'>
+                    <FaPlus />
+                    <p className='text-lg text-[#091B22]'>CMS</p>
+                  </li>
+                </ul>
+                <p className='mt-4 md:mt-10'><a href="#" className='border border-[#E6E8E9] rounded-3xl font-medium text-xl text-[#091B22]
+                   px-8 py-3 hover:bg-[#091B22] hover:text-white'>Read more</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* service web dev end */}
+
+      {/* service hire start */}
+      <section className="pb-10 md:pb-28">
+        <div className="max-w-6xl mx-auto px-2">
+          <h1 className='font-volkhov text-5xl lg:text-7xl lg:leading-[90px] text-[#091B22] text-center mb-6 lg:mb-16'>Hire dedicated
+            <br /> designers</h1>
+
+          <div className="flex flex-wrap items-center justify-between -mx-2">
+            <div className="w-full md:w-1/2 px-2 order-2 md:order-1">
+              <div className="lg:pe-24">
+                <p className='text-[#6F7177] text-lg mb-2 md:mb-5'>Hire dedicated designers</p>
+                <p className='text-xl text-[#091B22] mb-4 md:mb-10'>
+                  When you hire a designer from Beeo Digital, you can be confident that you're getting a highly skilled and experienced professional. Our designers are passionate about their craft and have a track record of delivering exceptional results for our clients. We work closely with our clients to understand their needs and goals, ensuring that every design project we undertake is tailored to their specific requirements.
+                </p>
+                <ul>
+                  <li className='flex items-center gap-4 mb-2 md:mb-3'>
+                    <FaPlus />
+                    <p className='text-lg text-[#091B22]'>UI/UX Designer</p>
+                  </li>
+                  <li className='flex items-center gap-4 mb-2 md:mb-3'>
+                    <FaPlus />
+                    <p className='text-lg text-[#091B22]'>Graphic Designer</p>
+                  </li>
+                  <li className='flex items-center gap-4 mb-2 md:mb-3'>
+                    <FaPlus />
+                    <p className='text-lg text-[#091B22]'>Marketing Designer</p>
+                  </li>
+                </ul>
+                <p className='mt-4 md:mt-10'><a href="#" className='border border-[#E6E8E9] rounded-3xl font-medium text-xl text-[#091B22]
+                   px-8 py-3 hover:bg-[#091B22] hover:text-white'>Read more</a></p>
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0 order-1 md:order-2">
+              <Image src={ServiceHire} alt='service img' className='w-full hover:shadow-xl hover:-translate-y-2' />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* service hire end */}
+
+      {/* faq start */}
+      <section className='pb-10 md:pb-24'>
+        <div className="max-w-6xl mx-auto px-2">
+          <div className="flex flex-wrap items-end -mx-2">
+            <div className="w-full md:w-1/2 px-2 order-2 md:order-1">
+              <h1 className='font-volkhov text-4xl lg:text-5xl lg:leading-[66px] text-[#091B22] mb-4 lg:mb-10'>A few things clients normally ask us</h1>
+              {/* accordion */}
+              <Accordion preExpanded={'a'}>
+                <AccordionItem className='py-4 lg:py-6 border-b border-[#E6E8E9]' uuid="a">
+                    <AccordionItemHeading>
+                        <AccordionItemButton className='flex items-center gap-3'>
+                          <FaPlus />
+                          <h6 className='font-semibold text-[#091B22] text-lg'>Do you proin fermentum cursus sem?</h6>
+                        </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      <p className='text-[#091B22] text-lg ps-7 mt-3 lg:mt-5'>
+                        Proin fermentum cursus sem a convallis mi imperdiet eget. Nunc interdum lacus nec orci rutrum efficitur non eleifend
+                      </p>
+                    </AccordionItemPanel>
+                </AccordionItem>
+                <AccordionItem className='py-4 lg:py-6 border-b border-[#E6E8E9]' uuid="b">
+                    <AccordionItemHeading>
+                        <AccordionItemButton className='flex items-center gap-3'>
+                          <FaPlus />
+                          <h6 className='font-semibold text-[#091B22] text-lg'>Do you proin fermentum cursus sem?</h6>
+                        </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      <p className='text-[#091B22] text-lg ps-7 mt-3 lg:mt-5'>
+                        Proin fermentum cursus sem a convallis mi imperdiet eget. Nunc interdum lacus nec orci rutrum efficitur non eleifend
+                      </p>
+                    </AccordionItemPanel>
+                </AccordionItem>
+                <AccordionItem className='py-4 lg:py-6 border-b border-[#E6E8E9]' uuid="c">
+                    <AccordionItemHeading>
+                        <AccordionItemButton className='flex items-center gap-3'>
+                          <FaPlus />
+                          <h6 className='font-semibold text-[#091B22] text-lg'>Do you proin fermentum cursus sem?</h6>
+                        </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      <p className='text-[#091B22] text-lg ps-7 mt-3 lg:mt-5'>
+                        Proin fermentum cursus sem a convallis mi imperdiet eget. Nunc interdum lacus nec orci rutrum efficitur non eleifend
+                      </p>
+                    </AccordionItemPanel>
+                </AccordionItem>
+                <AccordionItem className='py-4 lg:py-6 border-b border-[#E6E8E9]' uuid="d">
+                    <AccordionItemHeading>
+                        <AccordionItemButton className='flex items-center gap-3'>
+                          <FaPlus />
+                          <h6 className='font-semibold text-[#091B22] text-lg'>Do you proin fermentum cursus sem?</h6>
+                        </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      <p className='text-[#091B22] text-lg ps-7 mt-3 lg:mt-5'>
+                        Proin fermentum cursus sem a convallis mi imperdiet eget. Nunc interdum lacus nec orci rutrum efficitur non eleifend
+                      </p>
+                    </AccordionItemPanel>
+                </AccordionItem>
+              </Accordion>
+
+            </div>
+            <div className="w-full md:w-1/2 px-2 order-1 md:order-2">
+              <div className="lg:px-8">
+                <Image src={FaqImg} alt='service img' className='w-full hover:-translate-y-2' />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* faq end */}
 
     </>
   )
