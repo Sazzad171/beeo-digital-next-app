@@ -53,7 +53,7 @@ export default function Home() {
               <p className='text-[#6F7177] font-medium mb-4'>Our story</p>
             </div>
             <div className="w-full md:w-3/5 px-2">
-              <p className='text-[#091B22] text-xl md:text-2xl md:leading-[2.5rem] mb-5'>
+              <p className='text-[#091B22] text-lg md:text-2xl md:leading-[2.5rem] mb-5'>
                 Beeo Digital was founded with a vision to help businesses harness the power of digital technology to achieve their goals. Over the past 3 years, we have grown into a team of 10 talented and dedicated professionals who are passionate about creating innovative digital solutions for our clients. 
               </p>
             </div>
@@ -163,7 +163,7 @@ export default function Home() {
           <div className="flex flex-wrap -mx-2">
             <div className="w-full md:w-4/5 px-2">
               <h2 className="font-volkhov text-4xl lg:text-6xl lg:leading-[74px] text-[#091B22] mb-4 md:mb-8">Build grow & manage your digital identity</h2>
-              <p className='text-[#091B22] text-xl md:text-2xl md:leading-[2.5rem] mb-5'>
+              <p className='text-[#091B22] text-lg md:text-2xl md:leading-[2.5rem] mb-5'>
                 At Beeo Digital, we believe that a strong digital identity is essential for businesses to succeed in today's digital landscape. Our tagline, "build, grow, and manage your digital identity," reflects our commitment to helping our clients establish and maintain a strong online presence. We offer a range of services that help businesses build their digital identity, including web design, social media marketing, and branding. Our team of experts works closely with clients to create a strategy that aligns with their business goals and engages their target audience. We also provide ongoing support to help businesses grow and manage their digital identity, ensuring that they stay ahead of the competition and achieve long-term success.
               </p>
             </div>
@@ -308,7 +308,7 @@ export default function Home() {
                 }}
               >
                 <SwiperSlide>
-                  <p className='text-[#091B22] text-xl md:text-2xl md:leading-[2.5rem] mb-5'>
+                  <p className='text-[#091B22] text-lg md:text-2xl md:leading-[2.5rem] mb-5'>
                     I had the pleasure of working with Beeo Digital on a web application project, and I can confidently say that their team exceeded my expectations. They were professional, attentive to detail, and delivered a design that perfectly captured the essence of my brand. The team's creativity and expertise shone through in every aspect of the project, from the initial concept to the final product. I'm thrilled with the end result, and I wouldn't hesitate to recommend Beeo Digital to anyone in need of exceptional UI design services.
                   </p>
                   <div className="flex items-center gap-4">
@@ -317,7 +317,7 @@ export default function Home() {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <p className='text-[#091B22] text-xl md:text-2xl md:leading-[2.5rem] mb-5'>
+                  <p className='text-[#091B22] text-lg md:text-2xl md:leading-[2.5rem] mb-5'>
                     I had the pleasure of working with Beeo Digital on a web application project, and I can confidently say that their team exceeded my expectations. They were professional, attentive to detail, and delivered a design that perfectly captured the essence of my brand. The team's creativity and expertise shone through in every aspect of the project, from the initial concept to the final product. I'm thrilled with the end result, and I wouldn't hesitate to recommend Beeo Digital to anyone in need of exceptional UI design services.
                   </p>
                   <div className="flex items-center gap-4">

@@ -477,7 +477,7 @@ export default function Home() {
                 }}
               >
                 <SwiperSlide>
-                  <p className='text-[#091B22] text-xl md:text-2xl leading-[36px] mb-5'>
+                  <p className='text-[#091B22] text-lg md:text-2xl md:leading-[36px] mb-5'>
                     I had the pleasure of working with Beeo Digital on a web application project, and I can confidently say that their team exceeded my expectations. They were professional, attentive to detail, and delivered a design that perfectly captured the essence of my brand. The team's creativity and expertise shone through in every aspect of the project, from the initial concept to the final product. I'm thrilled with the end result, and I wouldn't hesitate to recommend Beeo Digital to anyone in need of exceptional UI design services.
                   </p>
                   <div className="flex items-center gap-4">
@@ -486,7 +486,7 @@ export default function Home() {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <p className='text-[#091B22] text-xl md:text-2xl leading-[36px] mb-5'>
+                  <p className='text-[#091B22] text-lg md:text-2xl md:leading-[36px] mb-5'>
                     I had the pleasure of working with Beeo Digital on a web application project, and I can confidently say that their team exceeded my expectations. They were professional, attentive to detail, and delivered a design that perfectly captured the essence of my brand. The team's creativity and expertise shone through in every aspect of the project, from the initial concept to the final product. I'm thrilled with the end result, and I wouldn't hesitate to recommend Beeo Digital to anyone in need of exceptional UI design services.
                   </p>
                   <div className="flex items-center gap-4">
@@ -495,7 +495,7 @@ export default function Home() {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <p className='text-[#091B22] text-xl md:text-2xl leading-[36px] mb-5'>
+                  <p className='text-[#091B22] text-lg md:text-2xl md:leading-[36px] mb-5'>
                     I had the pleasure of working with Beeo Digital on a web application project, and I can confidently say that their team exceeded my expectations. They were professional, attentive to detail, and delivered a design that perfectly captured the essence of my brand. The team's creativity and expertise shone through in every aspect of the project, from the initial concept to the final product. I'm thrilled with the end result, and I wouldn't hesitate to recommend Beeo Digital to anyone in need of exceptional UI design services.
                   </p>
                   <div className="flex items-center gap-4">
