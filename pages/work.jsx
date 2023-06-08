@@ -46,7 +46,7 @@ export default function Work() {
       <section className=''>
         <div className="max-w-6xl mx-auto px-3">
           {/* filter links */}
-          <ul className='flex flex-wrap gap-4 mb-4 md:mb-7'>
+          <ul className='flex flex-wrap gap-4 mb-6 md:mb-7'>
             <li>
               <button onClick={() => filterProject("")} className={`font-medium text-lg pb-1 ${activeTab === '' ? "text-[#091B22] border-b border-[#6F7177]" : "text-[#6F7177]"}`}>All Projects</button>
             </li>
@@ -69,20 +69,20 @@ export default function Work() {
             {
               projects.map((item, i) => {
                 return i % 2 === 0 ? (
-                  <div className="w-full md:w-2/3 ps-2 pe-2 lg:pe-7 mb-4 lg:mb-10" key={item.id}>
+                  <div className="w-full md:w-2/3 ps-2 pe-2 lg:pe-7 mb-8 lg:mb-10" key={item.id}>
                     <Link href="/work/[id]" as={`/work/${item.id}`}>
                       <Image src={item.image} alt='projects' className='mb-5 hover:shadow-lg hover:shadow-gray-500' />
                       <p className='text-lg'>
-                        <b>Treva</b> - Feel your experience with Treva
+                        <b>{ item.name }</b> - { item.details }
                       </p>
                     </Link>
                   </div>
                 ) : (
-                  <div className="w-full md:w-1/3 px-2 mb-4 lg:mb-10" key={item.id}>
+                  <div className="w-full md:w-1/3 px-2 mb-8 lg:mb-10" key={item.id}>
                     <Link href="/work/[id]" as={`/work/${item.id}`}>
                       <Image src={item.image} alt='projects' className='mb-5 hover:shadow-lg hover:shadow-gray-500' />
                       <p className='text-lg'>
-                        <b>Radiona</b> - Etiam pulvinar tortor id blandit for the space
+                        <b>{ item.name }</b> - { item.details }
                       </p>
                     </Link>
                   </div>

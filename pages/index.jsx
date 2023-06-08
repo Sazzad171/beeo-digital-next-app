@@ -226,35 +226,35 @@ export default function Home() {
       {/* featured projects start */}
       <section className='py-10 md:py-24'>
         <div className="max-w-6xl mx-auto px-3">
-          <h2 className='font-volkhov font-normal text-3xl md:text-6xl text-[#091B22] mb-4 md:mb-16'>Featured projects</h2>
+          <h2 className='font-volkhov font-normal text-3xl md:text-6xl text-[#091B22] mb-6 md:mb-16'>Featured projects</h2>
           <div className="flex flex-wrap -mx-2">
-            <div className="w-full md:w-2/3 ps-2 pe-2 lg:pe-7 mb-4 lg:mb-10">
+            <div className="w-full md:w-2/3 ps-2 pe-2 lg:pe-7 mb-8 lg:mb-10">
               <a href="#">
-                <Image src={FP1} alt='featured projects' className='mb-5 hover:shadow-lg hover:shadow-gray-500' />
+                <Image src={FP1} alt='featured projects' className='mb-3 lg:mb-5 hover:shadow-lg hover:shadow-gray-500' />
                 <p className='text-lg'>
                   <b>TopDoc</b> - Improving the doctor appointment booking app's
                 </p>
               </a>
             </div>
-            <div className="w-full md:w-1/3 px-2 mb-4 lg:mb-10">
+            <div className="w-full md:w-1/3 px-2 mb-8 lg:mb-10">
               <a href="#">
-                <Image src={FP2} alt='featured projects' className='mb-5 hover:shadow-lg hover:shadow-gray-500' />
+                <Image src={FP2} alt='featured projects' className='mb-3 lg:mb-5 hover:shadow-lg hover:shadow-gray-500' />
                 <p className='text-lg'>
                   <b>BestStay</b> - UI/UX case study
                 </p>
               </a>
             </div>
-            <div className="w-full md:w-2/3 ps-2 pe-2 lg:pe-7 mb-4 lg:mb-10">
+            <div className="w-full md:w-2/3 ps-2 pe-2 lg:pe-7 mb-8 lg:mb-10">
               <a href="#">
-                <Image src={FP3} alt='featured projects' className='mb-5 hover:shadow-lg hover:shadow-gray-500' />
+                <Image src={FP3} alt='featured projects' className='mb-3 lg:mb-5 hover:shadow-lg hover:shadow-gray-500' />
                 <p className='text-lg'>
                   <b>Pondith</b> - A Gamified E-Learning Case Study
                 </p>
               </a>
             </div>
-            <div className="w-full md:w-1/3 px-2 mb-4 lg:mb-10">
+            <div className="w-full md:w-1/3 px-2 mb-8 lg:mb-10">
               <a href="#">
-                <Image src={FP4} alt='featured projects' className='mb-5 hover:shadow-lg hover:shadow-gray-500' />
+                <Image src={FP4} alt='featured projects' className='mb-3 lg:mb-5 hover:shadow-lg hover:shadow-gray-500' />
                 <p className='text-lg'>
                   <b>Crisp</b> - Tellus, in consequat enim hasellus eu lectus venenatis
                 </p>
