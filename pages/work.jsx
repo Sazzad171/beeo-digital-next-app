@@ -35,7 +35,7 @@ export default function Work() {
 
       {/* page heading area start */}
       <section className='pt-20 md:pt-[140px] pb-10 md:pb-20'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <p className='text-xl text-[#091B22] mb-2 md:mb-4'>Work</p>
           <h1 className='font-volkhov text-5xl lg:text-7xl lg:leading-[90px] text-[#091B22]'>Our projects to show you <br /> what's up</h1>
         </div>
@@ -44,7 +44,7 @@ export default function Work() {
 
       {/* project list start */}
       <section className=''>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           {/* filter links */}
           <ul className='flex flex-wrap gap-4 mb-4 md:mb-7'>
             <li>

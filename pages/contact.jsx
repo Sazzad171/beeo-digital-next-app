@@ -17,7 +17,7 @@ export default function Home() {
 
       {/* page heading area start */}
       <section className='pt-20 md:pt-[140px] pb-10 md:pb-32'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <p className='text-xl text-[#091B22] mb-3 md:mb-4'>Contact</p>
           <h1 className='font-volkhov text-5xl lg:text-7xl lg:leading-[90px] text-[#091B22]'>
             <Image src={Person} alt='person img' className='inline w-14 h-14 rounded-full -mt-[14px] me-8' />
@@ -29,7 +29,7 @@ export default function Home() {
 
       {/* contact form area start */}
       <section className='pb-4 md:pb-10'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <div className="flex flex-wrap -mx-2">
             <div className="w-full md:w-3/5 px-2 mb-4 md:mb-0">
               <form action="" className='md:pe-10'>

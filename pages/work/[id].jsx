@@ -30,7 +30,7 @@ const WorkDetails = () => {
 
       {/* page heading area start */}
       <section className='pt-20 md:pt-[140px] pb-10 md:pb-20'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <p className='text-xl text-[#091B22] mb-2 md:mb-4'>Treva</p>
           <h1 className='font-volkhov text-5xl lg:text-7xl lg:leading-[90px] text-[#091B22]'>Feel your experience <br /> with Treva</h1>
         </div>
@@ -39,7 +39,7 @@ const WorkDetails = () => {
 
       {/* challenge start */}
       <section className='pb-10 md:pb-24 md:pt-4'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <div className="flex flex-wrap -mx-2">
             <div className="w-full md:w-2/5 px-2">
               <p className='text-[#6F7177] font-medium mb-4'>The challenge</p>
@@ -62,7 +62,7 @@ const WorkDetails = () => {
 
       {/* brand id area start */}
       <section className='pb-8 md:pb-24'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <div className="flex flex-wrap -mx-2 mb-4 md:mb-16">
             <div className="w-full md:w-4/5 px-2">
               <h2 className="font-volkhov text-4xl lg:text-6xl lg:leading-[74px] text-[#091B22] mb-3 md:mb-8">Brand identity</h2>
@@ -95,7 +95,7 @@ const WorkDetails = () => {
 
       {/* wireframe area start */}
       <section className='pb-8 md:pb-24'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <div className="flex flex-wrap -mx-2 mb-4 md:mb-16">
             <div className="w-full md:w-4/5 px-2">
               <h2 className="font-volkhov text-4xl lg:text-6xl lg:leading-[74px] text-[#091B22] mb-3 md:mb-8">Wireframe</h2>
@@ -119,7 +119,7 @@ const WorkDetails = () => {
 
       {/* visual aes area start */}
       <section className='pb-8 md:pb-24'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <div className="flex flex-wrap -mx-2 mb-4 md:mb-16">
             <div className="w-full md:w-4/5 px-2">
               <h2 className="font-volkhov text-4xl lg:text-6xl lg:leading-[74px] text-[#091B22] mb-3 md:mb-8">Visual aesthetics</h2>
@@ -152,7 +152,7 @@ const WorkDetails = () => {
 
       {/* the result area start */}
       <section className='pb-8 md:pb-24'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <div className="flex flex-wrap -mx-2">
             <div className="w-full md:w-4/5 px-2">
               <h2 className="font-volkhov text-4xl lg:text-6xl lg:leading-[74px] text-[#091B22] mb-3 md:mb-10">The results</h2>
@@ -180,7 +180,7 @@ const WorkDetails = () => {
 
       {/* testimonial start */}
       <section className='bg-[#091B22] py-10 md:py-24'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <div className="flex flex-wrap -mx-2">
             <div className="w-full md:w-2/5 px-2">
               <p className='text-[#FFFFFF99] font-medium mb-4'>Feedback from our clients</p>
@@ -201,7 +201,7 @@ const WorkDetails = () => {
 
       {/* what next start */}
       <section className='py-10 md:py-24'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <h2 className='font-volkhov font-normal text-3xl md:text-6xl text-[#091B22] mb-4 md:mb-14'>What next</h2>
           <div className="flex flex-wrap -mx-2">
             <div className="w-full md:w-2/3 ps-2 pe-2 lg:pe-7 mb-4 lg:mb-10">

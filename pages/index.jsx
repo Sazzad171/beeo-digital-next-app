@@ -17,6 +17,7 @@ import CountUp from 'react-countup';
 
 // icons
 import { CgArrowLongRight } from 'react-icons/cg';
+import { FiArrowUpRight } from 'react-icons/fi';
 
 // import images
 import TextBottomImg from '../public/img/banner-text-line.png';
@@ -40,8 +41,8 @@ export default function Home() {
       <Meta />
 
       {/* banner start */}
-      <section className='home-banner bg-[#F3F7F5] pt-20 md:pt-[160px] relative'>
-        <div className='max-w-4xl mx-auto mb-20'>
+      <section className='home-banner bg-[#F3F7F5] pt-20 md:pt-[160px] pb-6 lg:pb-0 relative'>
+        <div className='max-w-4xl mx-auto lg:mb-20'>
           <h1 className='text-5xl md:text-7xl font-volkhov font-bold text-center text-navy-dark mb-4'>
             Where <br /> your {' '}
             <span className="relative z-10">
@@ -51,16 +52,21 @@ export default function Home() {
             <br /> meet reality
           </h1>
           <p className='text-center text-navy-light mb-8'>Unleashing the Power of Imagination: Crafting Bold and Innovative Designs for Your Visionary Brand.</p>
-          <p className="text-center">
-            <Link href='/' className='bg-[#5C83FB] py-3 md:py-4 px-6 md:px-9 text-white font-medium md:text-xl rounded-full inline-block
-              hover:bg-slate-900'>Get Started</Link>
-          </p>
+          <div className="text-center">
+            <Link href='/' className='inline-block bg-[#FFA552] py-3 md:py-4 px-6 md:px-9 text-black font-medium md:text-base
+              hover:bg-blue-nav hover:text-white'>
+                <span className="flex items-center gap-2">
+                  View Our Works
+                  <FiArrowUpRight className='w-6 h-6' />
+                </span>
+              </Link>
+          </div>
         </div>
         
         {/* circle text */}
         
 
-        <div className="max-w-6xl 2xl:max-w-[92rem] ms-auto px-2 md:px-0 relative z-10">
+        <div className="max-w-6xl 2xl:max-w-[92rem] ms-auto px-2 md:px-0 relative z-10 hidden lg:block">
 
           <div className="flex flex-wrap items-center mb-4 md:mb-0">
             <div className="w-full md:w-1/4 px-2 mb-4 md:mb-0">
@@ -125,8 +131,8 @@ export default function Home() {
       {/* banner end */}
 
       {/* counter area start */}
-      <section className='pt-14 md:pt-40 pb-14 md:pb-36 px-2'>
-        <div className="max-w-6xl mx-auto">
+      <section className='pt-6 md:pt-40 pb-14 md:pb-36 px-2'>
+        <div className="max-w-6xl mx-auto px-3">
           <h5 className="text-center text-[#DF6951] uppercase text-lg font-semibold mb-2">What sets us apart</h5>
           <h2 className="text-center font-volkhov font-bold text-3xl md:text-4xl text-navy-light leading-10 md:leading-[50px]">
             We bring a unique international perspective to <br />
@@ -163,7 +169,7 @@ export default function Home() {
 
       {/* services start */}
       <section className='bg-[#131313] py-14 md:py-24'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <div className="flex flex-wrap -mx-2 mb-20">
             <div className="w-full md:w-1/2 px-4">
               <p className='services-title text-yellow text-lg ps-8 relative mb-4'>Services</p>
@@ -219,36 +225,36 @@ export default function Home() {
 
       {/* featured projects start */}
       <section className='py-10 md:py-24'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <h2 className='font-volkhov font-normal text-3xl md:text-6xl text-[#091B22] mb-4 md:mb-16'>Featured projects</h2>
           <div className="flex flex-wrap -mx-2">
             <div className="w-full md:w-2/3 ps-2 pe-2 lg:pe-7 mb-4 lg:mb-10">
               <a href="#">
-                <Image src={FP1} alt='featured projects' className='mb-5' />
+                <Image src={FP1} alt='featured projects' className='mb-5 hover:shadow-lg hover:shadow-gray-500' />
                 <p className='text-lg'>
-                  <b>Treva</b> - Feel your experience with Treva
+                  <b>TopDoc</b> - Improving the doctor appointment booking app's
                 </p>
               </a>
             </div>
             <div className="w-full md:w-1/3 px-2 mb-4 lg:mb-10">
               <a href="#">
-                <Image src={FP2} alt='featured projects' className='mb-5' />
+                <Image src={FP2} alt='featured projects' className='mb-5 hover:shadow-lg hover:shadow-gray-500' />
                 <p className='text-lg'>
-                  <b>Radiona</b> - Etiam pulvinar tortor id blandit for the space
+                  <b>BestStay</b> - UI/UX case study
                 </p>
               </a>
             </div>
             <div className="w-full md:w-2/3 ps-2 pe-2 lg:pe-7 mb-4 lg:mb-10">
               <a href="#">
-                <Image src={FP3} alt='featured projects' className='mb-5' />
+                <Image src={FP3} alt='featured projects' className='mb-5 hover:shadow-lg hover:shadow-gray-500' />
                 <p className='text-lg'>
-                  <b>Creativa</b> - Phasellus eu lectus venenatis convallis sapien sit amet
+                  <b>Pondith</b> - A Gamified E-Learning Case Study
                 </p>
               </a>
             </div>
             <div className="w-full md:w-1/3 px-2 mb-4 lg:mb-10">
               <a href="#">
-                <Image src={FP4} alt='featured projects' className='mb-5' />
+                <Image src={FP4} alt='featured projects' className='mb-5 hover:shadow-lg hover:shadow-gray-500' />
                 <p className='text-lg'>
                   <b>Crisp</b> - Tellus, in consequat enim hasellus eu lectus venenatis
                 </p>
@@ -264,9 +270,9 @@ export default function Home() {
 
       {/* why choose start */}
       <section className='pb-10 md:pb-24'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <div className='mb-4 lg:mb-10'>
-            <h6 className="text-center text-blue font-medium text-lg mb-3">Our Solutions</h6>
+            <h6 className="text-center text-[#DF6951] font-medium text-lg mb-3">Our Solutions</h6>
             <h3 className="text-center font-volkhov font-bold text-[#0F172A] text-4xl">Why Choose Us</h3>
           </div>
           <div className='px-12 py-10 border border-[#E5EAF1] rounded-xl'>
@@ -300,9 +306,9 @@ export default function Home() {
 
       {/* testimonial start */}
       <section className='pb-10 md:pb-24'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <div className='mb-4 lg:mb-20'>
-            <h6 className="text-center text-blue font-medium text-lg mb-3">Testimonials</h6>
+            <h6 className="text-center text-[#DF6951] font-medium text-lg mb-3">Testimonials</h6>
             <h3 className="text-center font-volkhov font-bold text-[#0F172A] text-4xl">Our happy clients say about us</h3>
           </div>
         </div>
@@ -338,8 +344,8 @@ export default function Home() {
               <div className='flex items-center gap-4 p-4 rounded-full shadow-lg my-4'>
                 <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
                 <div>
-                  <p className='text-sm text-[#657790] mb-3'>Best design agency we've ever worked with.</p>
-                  <p className='text-sm text-[#657790]'>- @jamescron</p>
+                  <p className='text-sm text-[#657790] mb-3'>Transformed our brand with stunning design </p>
+                  <p className='text-sm text-[#657790]'>- @jennifer.a</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -356,8 +362,8 @@ export default function Home() {
               <div className='flex items-center gap-4 p-4 rounded-full shadow-lg my-4'>
                 <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
                 <div>
-                  <p className='text-sm text-[#657790] mb-3'>Best design agency we've ever worked with.</p>
-                  <p className='text-sm text-[#657790]'>- @jamescron</p>
+                  <p className='text-sm text-[#657790] mb-3'>Amazing work that speaks for itself. </p>
+                  <p className='text-sm text-[#657790]'>- @camerondi</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -365,8 +371,8 @@ export default function Home() {
               <div className='flex items-center gap-4 p-4 rounded-full shadow-lg my-4'>
                 <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
                 <div>
-                  <p className='text-sm text-[#657790] mb-3'>Best design agency we've ever worked with.</p>
-                  <p className='text-sm text-[#657790]'>- @jamescron</p>
+                  <p className='text-sm text-[#657790] mb-3'>Beeo Digital took our brand further. -</p>
+                  <p className='text-sm text-[#657790]'>- @christin.ja</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -374,8 +380,8 @@ export default function Home() {
               <div className='flex items-center gap-4 p-4 rounded-full shadow-lg my-4'>
                 <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
                 <div>
-                  <p className='text-sm text-[#657790] mb-3'>Best design agency we've ever worked with.</p>
-                  <p className='text-sm text-[#657790]'>- @jamescron</p>
+                  <p className='text-sm text-[#657790] mb-3'>Innovative designs that exceeded our expectations.</p>
+                  <p className='text-sm text-[#657790]'>- @alexborm</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -412,8 +418,8 @@ export default function Home() {
               <div className='flex items-center gap-4 p-4 rounded-full shadow-lg my-4'>
                 <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
                 <div>
-                  <p className='text-sm text-[#657790] mb-3'>Best design agency we've ever worked with.</p>
-                  <p className='text-sm text-[#657790]'>- @jamescron</p>
+                  <p className='text-sm text-[#657790] mb-3'>Professional and creative - highly recommended.</p>
+                  <p className='text-sm text-[#657790]'>- @alexborm</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -421,8 +427,8 @@ export default function Home() {
               <div className='flex items-center gap-4 p-4 rounded-full shadow-lg my-4'>
                 <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
                 <div>
-                  <p className='text-sm text-[#657790] mb-3'>Best design agency we've ever worked with.</p>
-                  <p className='text-sm text-[#657790]'>- @jamescron</p>
+                  <p className='text-sm text-[#657790] mb-3'>Expert designers who understand our vision.</p>
+                  <p className='text-sm text-[#657790]'>- @alexborm</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -430,8 +436,8 @@ export default function Home() {
               <div className='flex items-center gap-4 p-4 rounded-full shadow-lg my-4'>
                 <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
                 <div>
-                  <p className='text-sm text-[#657790] mb-3'>Best design agency we've ever worked with.</p>
-                  <p className='text-sm text-[#657790]'>- @jamescron</p>
+                  <p className='text-sm text-[#657790] mb-3'>Our go-to agency for design needs.</p>
+                  <p className='text-sm text-[#657790]'>- @martina</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -439,24 +445,15 @@ export default function Home() {
               <div className='flex items-center gap-4 p-4 rounded-full shadow-lg my-4'>
                 <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
                 <div>
-                  <p className='text-sm text-[#657790] mb-3'>Best design agency we've ever worked with.</p>
-                  <p className='text-sm text-[#657790]'>- @jamescron</p>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='flex items-center gap-4 p-4 rounded-full shadow-lg my-4'>
-                <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
-                <div>
-                  <p className='text-sm text-[#657790] mb-3'>Best design agency we've ever worked with.</p>
-                  <p className='text-sm text-[#657790]'>- @jamescron</p>
+                  <p className='text-sm text-[#657790] mb-3'>Always delivers on time and on-budget.</p>
+                  <p className='text-sm text-[#657790]'> - @christin.ja</p>
                 </div>
               </div>
             </SwiperSlide>
           </Swiper>
         </div>
 
-        <div className="max-w-6xl mx-auto px-2 mt-4 lg:mt-20">
+        <div className="client-feedback-area max-w-6xl mx-auto px-3 mt-4 lg:mt-20">
           <div className="flex flex-wrap -mx-2">
             <div className="w-full md:w-2/5 px-2">
               <p className='text-[#091B22] font-medium mb-4'>Feedback from our clients</p>
@@ -480,7 +477,7 @@ export default function Home() {
                   <p className='text-[#091B22] text-lg md:text-2xl md:leading-[36px] mb-5'>
                     I had the pleasure of working with Beeo Digital on a web application project, and I can confidently say that their team exceeded my expectations. They were professional, attentive to detail, and delivered a design that perfectly captured the essence of my brand. The team's creativity and expertise shone through in every aspect of the project, from the initial concept to the final product. I'm thrilled with the end result, and I wouldn't hesitate to recommend Beeo Digital to anyone in need of exceptional UI design services.
                   </p>
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-4 mb-10">
                     <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
                     <p className='text-[#091B22]'>Jenny Wilson, Founder - Muzica</p>
                   </div>
@@ -489,7 +486,7 @@ export default function Home() {
                   <p className='text-[#091B22] text-lg md:text-2xl md:leading-[36px] mb-5'>
                     I had the pleasure of working with Beeo Digital on a web application project, and I can confidently say that their team exceeded my expectations. They were professional, attentive to detail, and delivered a design that perfectly captured the essence of my brand. The team's creativity and expertise shone through in every aspect of the project, from the initial concept to the final product. I'm thrilled with the end result, and I wouldn't hesitate to recommend Beeo Digital to anyone in need of exceptional UI design services.
                   </p>
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-4 mb-10">
                     <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
                     <p className='text-[#091B22]'>Jenny Wilson, Founder - Muzica</p>
                   </div>
@@ -498,7 +495,7 @@ export default function Home() {
                   <p className='text-[#091B22] text-lg md:text-2xl md:leading-[36px] mb-5'>
                     I had the pleasure of working with Beeo Digital on a web application project, and I can confidently say that their team exceeded my expectations. They were professional, attentive to detail, and delivered a design that perfectly captured the essence of my brand. The team's creativity and expertise shone through in every aspect of the project, from the initial concept to the final product. I'm thrilled with the end result, and I wouldn't hesitate to recommend Beeo Digital to anyone in need of exceptional UI design services.
                   </p>
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-4 mb-10">
                     <Image src={User} alt='user img' className='w-12 h-12 rounded-full' />
                     <p className='text-[#091B22]'>Jenny Wilson, Founder - Muzica</p>
                   </div>

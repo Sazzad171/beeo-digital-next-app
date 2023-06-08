@@ -47,7 +47,7 @@ export default function Home() {
 
       {/* history start */}
       <section className='pb-10 md:pb-24 md:pt-4'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <div className="flex flex-wrap -mx-2">
             <div className="w-full md:w-2/5 px-2">
               <p className='text-[#6F7177] font-medium mb-4'>Our story</p>
@@ -64,7 +64,7 @@ export default function Home() {
 
       {/* counter area start */}
       <section className='pb-8 md:pb-24'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <div className="flex flex-wrap -mx-2">
             <div className="w-1/2 lg:w-1/4 px-2 mb-4 lg:mb-0">
               <h2 className='text-[#091B22] font-volkhov text-4xl lg:text-6xl mb-2 md:mb-4'>
@@ -159,7 +159,7 @@ export default function Home() {
 
       {/* build grow area start */}
       <section className='pb-8 md:pb-24'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <div className="flex flex-wrap -mx-2">
             <div className="w-full md:w-4/5 px-2">
               <h2 className="font-volkhov text-4xl lg:text-6xl lg:leading-[74px] text-[#091B22] mb-4 md:mb-8">Build grow & manage your digital identity</h2>
@@ -174,7 +174,7 @@ export default function Home() {
 
       {/* core values area start */}
       <section className='pb-8 md:pb-28'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <div className="flex flex-wrap -mx-2">
             <div className="w-full md:w-5/6 px-2">
               <h2 className="font-volkhov text-4xl lg:text-6xl lg:leading-[74px] text-[#091B22] mb-4 md:mb-14">Core values that define our success</h2>
@@ -217,7 +217,7 @@ export default function Home() {
 
       {/* we work with area start */}
       <section className='pb-8 md:pb-14'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <h2 className="font-volkhov text-4xl lg:text-6xl lg:leading-[74px] text-[#091B22] mb-4 md:mb-20">We work with people from <br /> all over the world</h2>
           <div className="flex flex-wrap -mx-2">
             <div className="w-1/2 lg:w-1/4 px-2 mb-6 lg:mb-24">
@@ -287,7 +287,7 @@ export default function Home() {
 
       {/* testimonial start */}
       <section className='pb-10 md:pb-24'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <div className="flex flex-wrap -mx-2">
             <div className="w-full md:w-2/5 px-2">
               <p className='text-[#6F7177] font-medium mb-4'>Feedback from our clients</p>

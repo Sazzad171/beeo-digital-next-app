@@ -37,7 +37,7 @@ export default function Services() {
 
       {/* page heading area start */}
       <section className='pt-20 md:pt-[140px] pb-10 md:pb-16'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <p className='text-xl text-[#091B22] mb-2 md:mb-4'>Services</p>
           <h1 className='font-volkhov text-5xl lg:text-7xl lg:leading-[90px] text-[#091B22]'>How we can help you <br /> with unique ideas</h1>
         </div>
@@ -46,7 +46,7 @@ export default function Services() {
 
       {/* core values area start */}
       <section className='pb-8 md:pb-28'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <div className="flex flex-wrap -mx-2">
             <div className="w-full md:w-5/6 px-2">
               
@@ -89,7 +89,7 @@ export default function Services() {
 
       {/* history start */}
       <section className='pb-10 md:pb-20'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <div className="flex flex-wrap -mx-2">
             <div className="w-full md:w-2/5 px-2">
               <p className='text-[#6F7177] font-medium mb-4'>What we do</p>
@@ -106,7 +106,7 @@ export default function Services() {
 
       {/* service website start */}
       <section className="pb-10 md:pb-24">
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <h1 className='font-volkhov text-5xl lg:text-7xl lg:leading-[90px] text-[#091B22] text-center mb-6 lg:mb-16'>Websites and <br /> platforms</h1>
 
           <div className="flex flex-wrap items-center justify-between -mx-2">
@@ -144,7 +144,7 @@ export default function Services() {
 
       {/* service mobile app start */}
       <section className="pb-10 md:pb-24">
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <h1 className='font-volkhov text-5xl lg:text-7xl lg:leading-[90px] text-[#091B22] text-center mb-6 lg:mb-16'>Mobile
             <br /> application</h1>
 
@@ -179,7 +179,7 @@ export default function Services() {
 
       {/* service strategy start */}
       <section className="pb-10 md:pb-24">
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <h1 className='font-volkhov text-5xl lg:text-7xl lg:leading-[90px] text-[#091B22] text-center mb-6 lg:mb-16'>Strategy
             <br /> and branding</h1>
 
@@ -218,7 +218,7 @@ export default function Services() {
 
       {/* service design start */}
       <section className="pb-10 md:pb-24">
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <h1 className='font-volkhov text-5xl lg:text-7xl lg:leading-[90px] text-[#091B22] text-center mb-6 lg:mb-16'>Design
             <br /> concept</h1>
 
@@ -257,7 +257,7 @@ export default function Services() {
 
       {/* service web dev start */}
       <section className="pb-10 md:pb-24">
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <h1 className='font-volkhov text-5xl lg:text-7xl lg:leading-[90px] text-[#091B22] text-center mb-6 lg:mb-16'>Website <br /> Development</h1>
 
           <div className="flex flex-wrap items-center justify-between -mx-2">
@@ -295,7 +295,7 @@ export default function Services() {
 
       {/* service hire start */}
       <section className="pb-10 md:pb-28">
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <h1 className='font-volkhov text-5xl lg:text-7xl lg:leading-[90px] text-[#091B22] text-center mb-6 lg:mb-16'>Hire dedicated
             <br /> designers</h1>
 
@@ -334,7 +334,7 @@ export default function Services() {
 
       {/* faq start */}
       <section className='pb-10 md:pb-24'>
-        <div className="max-w-6xl mx-auto px-2">
+        <div className="max-w-6xl mx-auto px-3">
           <div className="flex flex-wrap items-end -mx-2">
             <div className="w-full md:w-1/2 px-2 order-2 md:order-1">
               <h1 className='font-volkhov text-4xl lg:text-5xl lg:leading-[66px] text-[#091B22] mb-4 lg:mb-10'>A few things clients normally ask us</h1>

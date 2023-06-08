@@ -73,6 +73,11 @@ textarea:focus {
   background-color: #fff;
   z-index: 0;
 }
+@media (max-width: 1023px) {
+  .home-banner::after {
+    display: none;
+  }
+}
 .view-arrow::before {
   content: '';
   position: absolute;
@@ -127,6 +132,9 @@ textarea:focus {
 }
 .about-swiper .swiper-wrapper {
   align-items: center;
+}
+.client-feedback-area .swiper-pagination {
+  text-align: left;
 }
 
 /* animations */
