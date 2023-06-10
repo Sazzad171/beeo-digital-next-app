@@ -26,7 +26,5 @@ jobs:
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_NAME }}
-        password: ''
         dangerous-clean-slate: true
         local-dir: ./.next/
-        remote-dir: 'public_html'
