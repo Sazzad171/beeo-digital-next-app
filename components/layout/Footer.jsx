@@ -9,7 +9,7 @@ import { FaBehance, FaDribbble, FaLinkedinIn, FaInstagram } from 'react-icons/fa
 
 const Footer = () => {
   return (
-    <footer className='py-4'>
+    <footer className='py-4 lg:pt-14 mt-6 border-t-[1px] border-t-gray-100'>
       <div className="max-w-6xl mx-auto px-3">
         <div className="flex flex-wrap -mx-2">
           <div className="w-full md:w-1/2 lg:w-2/5 px-2 mb-4 lg:mb-0">

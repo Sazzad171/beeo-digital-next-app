@@ -53,7 +53,7 @@ export default function Home() {
           </h1>
           <p className='text-center text-navy-light mb-8'>Unleashing the Power of Imagination: Crafting Bold and Innovative Designs for Your Visionary Brand.</p>
           <div className="text-center">
-            <Link href='/' className='inline-block bg-[#FFA552] py-3 md:py-4 px-6 md:px-9 text-black font-medium md:text-base
+            <Link href='/work' className='inline-block bg-[#FFA552] py-3 md:py-4 px-6 md:px-9 text-black font-medium md:text-base
               hover:bg-blue-nav hover:text-white'>
                 <span className="flex items-center gap-2">
                   View Our Works
@@ -94,24 +94,24 @@ export default function Home() {
                 }}
               >
                 <SwiperSlide>
-                  <a href="#">
+                  <Link href="/work/1">
                     <Image src={RPImg1} alt='project img' />
-                  </a>
+                  </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <a href="#">
+                  <Link href="/work/1">
                     <Image src={RPImg2} alt='project img' />
-                  </a>
+                  </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <a href="#">
+                  <Link href="/work/1">
                     <Image src={RPImg1} alt='project img' />
-                  </a>
+                  </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <a href="#">
+                  <Link href="/work/1">
                     <Image src={RPImg2} alt='project img' />
-                  </a>
+                  </Link>
                 </SwiperSlide>
               </Swiper>
 
@@ -229,40 +229,40 @@ export default function Home() {
           <h2 className='font-volkhov font-normal text-3xl md:text-6xl text-[#091B22] mb-6 md:mb-16'>Featured projects</h2>
           <div className="flex flex-wrap -mx-2">
             <div className="w-full md:w-2/3 ps-2 pe-2 lg:pe-7 mb-8 lg:mb-10">
-              <a href="#">
+              <Link href="/work/1">
                 <Image src={FP1} alt='featured projects' className='mb-3 lg:mb-5 hover:shadow-lg hover:shadow-gray-500' />
                 <p className='text-lg'>
                   <b>TopDoc</b> - Improving the doctor appointment booking app's
                 </p>
-              </a>
+              </Link>
             </div>
             <div className="w-full md:w-1/3 px-2 mb-8 lg:mb-10">
-              <a href="#">
+              <Link href="/work/1">
                 <Image src={FP2} alt='featured projects' className='mb-3 lg:mb-5 hover:shadow-lg hover:shadow-gray-500' />
                 <p className='text-lg'>
                   <b>BestStay</b> - UI/UX case study
                 </p>
-              </a>
+              </Link>
             </div>
             <div className="w-full md:w-2/3 ps-2 pe-2 lg:pe-7 mb-8 lg:mb-10">
-              <a href="#">
+              <Link href="/work/1">
                 <Image src={FP3} alt='featured projects' className='mb-3 lg:mb-5 hover:shadow-lg hover:shadow-gray-500' />
                 <p className='text-lg'>
                   <b>Pondith</b> - A Gamified E-Learning Case Study
                 </p>
-              </a>
+              </Link>
             </div>
             <div className="w-full md:w-1/3 px-2 mb-8 lg:mb-10">
-              <a href="#">
+              <Link href="/work/1">
                 <Image src={FP4} alt='featured projects' className='mb-3 lg:mb-5 hover:shadow-lg hover:shadow-gray-500' />
                 <p className='text-lg'>
                   <b>Crisp</b> - Tellus, in consequat enim hasellus eu lectus venenatis
                 </p>
-              </a>
+              </Link>
             </div>
           </div>
           <p className="text-center">
-            <a href="#" className='py-2 px-8 font-medium text-lg text-[#091B22] rounded-full inline-block border border-[#E6E8E9] hover:bg-black hover:text-white'>View all projects</a>
+            <Link href="/work" className='py-2 px-8 font-medium text-lg text-[#091B22] rounded-full inline-block border border-[#E6E8E9] hover:bg-black hover:text-white'>View all projects</Link>
           </p>
         </div>
       </section>

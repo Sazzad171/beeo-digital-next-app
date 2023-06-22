@@ -96,7 +96,7 @@ const Header = () => {
                       <li className='mb-4 md:mb-8'>
                         <Link href="/work" className='text-white text-2xl md:text-4xl font-bold uppercase hover:text-[#FBBC05]' onClick={handlePageChange}>work</Link>
                       </li>
-                      <li className='mb-4 md:mb-8'>
+                      {/* <li className='mb-4 md:mb-8'>
                         <Link href="/case-study" className='text-white text-2xl md:text-4xl font-bold uppercase hover:text-[#FBBC05]' onClick={handlePageChange}>case study</Link>
                       </li>
                       <li className='mb-4 md:mb-8'>
@@ -104,6 +104,12 @@ const Header = () => {
                       </li>
                       <li className='mb-4 md:mb-8'>
                         <Link href="/team" className='text-white text-2xl md:text-4xl font-bold uppercase hover:text-[#FBBC05]' onClick={handlePageChange}>team</Link>
+                      </li> */}
+                      <li className='mb-4 md:mb-8'>
+                        <Link href="/services" className='text-white text-2xl md:text-4xl font-bold uppercase hover:text-[#FBBC05]' onClick={handlePageChange}>Services</Link>
+                      </li>
+                      <li className='mb-4 md:mb-8'>
+                        <Link href="/contact" className='text-white text-2xl md:text-4xl font-bold uppercase hover:text-[#FBBC05]' onClick={handlePageChange}>Contact</Link>
                       </li>
                     </ul>
                   </div>
